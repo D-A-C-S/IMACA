@@ -1,0 +1,264 @@
+modelo,no.parametros,aumento,no.especies,no.imagenes,epochs,criterion,optimizer,descripcion,score,fecha,codigo,mcc
+resnet18,4104,30X,8,4143,1,CrossEntropyLoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)",Registro de prueba,0.547417245300409,"(2019, 10, 14, 16)",,
+resnet18,4104,30X,8,4143,2,CrossEntropyLoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)",Una epoca mas del experimento anterior,0.6762599791692739,"(2019, 10, 14, 16)",,
+resnet18,3078,160X,6,9596,10,CrossEntropyLoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)",Re-entrenamiento de la ultima capa(fc),0.927836165631835,"(2019, 10, 14, 17)",,
+resnet18,2363398,160X,6,9596,10,CrossEntropyLoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)","Re-entrenamiento de:(fc),ultima capa de convolucion,+bn. El desempeño del modelo disminuye despues de 5 epocas,posible overfitting",0.9538894251353912,"(2019, 10, 14, 18)",resnet18_0.9538894251353911,
+resnet18,2363398,160X,6,9596,5,CrossEntropyLoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)","Re-entrenamiento de:(fc),ultima capa de convolucion,+bn. Con correccion de resize",0.949403112184118,"(2019, 10, 15, 0)",resnet18_0.9494031121841183,
+EfficientNet-b0,4016322,160X,6,9596,6,CrossEntropyLoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)",Entrenamiento desde 0,0.77,"(2019, 10, 18, 2)",EfficientNet-b0_0.77,
+EfficientNet-b0,7686,160X,6,9596,12,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,(bug)el rendimiento disminuye en modo evaluacion para los mismos datos",0.917293500341608,"(2019, 10, 22, 23)",EfficientNet-b0_0.9172935003416081,
+EfficientNet-b0,7686,160X,6,9596,5,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,modo evaluacion funcionando normal,overfitting a partir de 3 epoch,capas internas con drop connect activo en entrenamiento",0.92674818527335,"(2019, 10, 23, 0)",EfficientNet-b0_0.9267481852733502,
+EfficientNet-b0,7686,160X,6,9596,5,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,capas internas en modo evaluacion",0.9306594808709632,"(2019, 10, 23, 0)",EfficientNet-b0_0.9306594808709626,
+EfficientNet-b0,727478,160X,6,9596,5,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,y ultimo bloque,pico dev acc 0.96",0.940837468173926,"(2019, 10, 23, 1)",EfficientNet-b0_0.9408374681739264,
+EfficientNet-b3,2257254,160X,6,9596,5,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,y ultimo bloque,t_acc 0.939",0.9229883726764928,"(2019, 10, 23, 3)",EfficientNet-b3_0.922988372676493,
+EfficientNet-b3,2257254,160X,6,9596,11,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,y ultimo bloque,puntaje de validacion inestable durante entrenamiento",0.9447484632143708,"(2019, 10, 23, 22)",EfficientNet-b3_0.933652410348338,0.933652410348338
+EfficientNet-b3,2264939,160X,11,10793,10,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,y ultimo bloque,dataset sin filtros",0.806540412480357,"(2019, 11, 4, 22)",EfficientNet-b3_0.7927500064377293,0.792750006437729
+EfficientNet-b0,733883,160X,11,9229,5,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,y ultimo bloque,dataset filtro >1",0.918585619149746,"(2019, 11, 5, 1)",EfficientNet-b0_0.9302521482261477,0.930252148226148
+EfficientNet-b0,733883,160X,11,9229,10,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Entrenamiento de _fc,y ultimo bloque,dataset filtro >1",0.94172846793805,"(2019, 11, 5, 1)",EfficientNet-b0_0.9537765447421827,0.953776544742183
+EfficientNet-b0,731321,160X,9,8445,10,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Se excluyen coniferas,Entrenamiento de _fc,y ultimo bloque,dataset filtro >1",0.9656818775377908,"(2019, 11, 14, 4)",EfficientNet-b0_0.9608873170114413,0.960887317011441
+EfficientNet-b0,731321,160X,9,8445,10,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Separacion de conjunto de validacion por horas,Se excluyen coniferas,Entrenamiento de _fc,y ultimo bloque,dataset filtro >1",0.956934597835306,"(2019, 11, 30, 3)",EfficientNet-b0_0.9507364285308393,0.9507364285308392
+EfficientNet-b0,1140921,160X,9,8445,10,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)","Separacion de conjunto de validacion por horas,,Entrenamiento de _fc,y ultimo bloque,dataset filtro >1,capa intermedia de convolucion que faltaba",0.956934597835306,"(2019, 11, 30, 5)",EfficientNet-b0_0.9579684403513525,0.957968440351352
+EfficientNet-b0,1728873,160X,9,8445,10,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)",ultimos dos bloques libres,0.9554858873130002,"(2019, 12, 7, 2)",EfficientNet-b0_0.9476267230754389,0.9476267230754388
+EfficientNet-b0,3167269,160X,9,8445,10,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.000691341716182545
+    weight_decay: 0.5
+)",ultimos dos bloques libres,0.9667418794166176,"(2019, 12, 8, 17)",EfficientNet-b0_0.9626690084163155,0.9626690084163156
+EfficientNet-b0,3710417,160X,9,8445,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.0009999454017610117
+    weight_decay: 0.5
+)","bloques libres [8:],dropout 0.3,weight decay,warmrestart",0.97730697647876,"(2019, 12, 8, 23)",EfficientNet-b0_0.9735668502213881,0.973566850221388
+EfficientNet-b0,4019077,160X,9,8445,14,CrossEntropyLoss(),"RMSprop (
+Parameter Group 0
+    alpha: 0.99
+    centered: False
+    eps: 1e-08
+    initial_lr: 0.003
+    lr: 9.80024463342223e-05
+    momentum: 0.9
+    weight_decay: 0
+)","Todos los parametros libres,dropout 0.4,,warmrestart,train acc 0.54",0.108607311933759,"(2019, 12, 10, 22)",EfficientNet-b0_0.13411112990219584,0.13411112990219584
+EfficientNet-b0,3710417,160X,9,8445,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.000999946557226017
+    weight_decay: 0.5
+)","Layer 8+,warmrestart,correccion tamaños de grupos de fechas",0.9363145575267394,"(2019, 12, 20, 3)",EfficientNet-b0_0.9328849182804023,0.9328849182804024
+EfficientNet-b0,423689,160X,9,5985,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)","Correccion bn_momentum,layer conv_headAugmix(jsd)",0.9311139796510928,"(2020, 1, 28, 3)",EfficientNet-b0_0.9215621107097017,0.9215621107097016
+EfficientNet-b0,423689,160X,9,5985,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)","Correccion bn_momentum,layer conv_head,Augmix(jsd=True)",0.9387002160593722,"(2020, 1, 28, 4)",EfficientNet-b0_0.9287998991823815,0.9287998991823816
+EfficientNet-b0,3710417,160X,9,5985,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    weight_decay: 0.0
+)","Conv8, no Augmix",0.9748322906596759,"(2020, 1, 30, 19)",EfficientNet-b0_0.9712927047660477,0.9712927047660476
+EfficientNet-b0,3710417,160X,9,5985,15,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    weight_decay: 0.0
+)","Conv8, no Augmix",0.9833395558760868,"(2020, 1, 30, 19)",EfficientNet-b0_0.9808278710843827,0.9808278710843829
+EfficientNet-b0,4019077,160X,9,5985,10,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    weight_decay: 0.1
+)","De cero,no Augmix",0.8538727427384079,"(2020, 1, 30, 23)",EfficientNet-b0_0.8325885993908778,0.8325885993908778
+Wide Resnet 50-2,41990153,160X,9,5985,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    weight_decay: 0.1
+)",Layer4+,0.9765528741510534,"(2020, 1, 31, 2)",Wide Resnet 50-2_0.9734913515772743,0.9734913515772744
+EfficientNet B0,3710417,160X,9,5985,7,CrossEntropyLoss(),"AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    weight_decay: 0.1
+)","conv8+,no jsd,escala aumentacion 0.8",0.9771554178702758,"(2020, 1, 31, 3)",EfficientNet B0_0.7655351561256303,0.7655351561256303

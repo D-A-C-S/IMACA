@@ -1,0 +1,3 @@
+[submodule "AdaIN"]
+	path = AdaIN
+	url = https://github.com/naoto0804/pytorch-AdaIN/
