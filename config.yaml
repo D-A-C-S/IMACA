@@ -1,0 +1,14 @@
+train_folder : "Data"
+dev_folder : "Data"
+
+batch_size : 32
+epochs : 16.0
+
+image_size : 256
+crop_size : 240
+
+dropout_prob : 0.6
+num_frozen_layers : 14 
+
+learning_rate : 0.001
+weight_decay : 0.0001
