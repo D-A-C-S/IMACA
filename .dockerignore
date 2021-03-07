@@ -1,0 +1,4 @@
+Data/*.jpg
+Outputs/*
+__pycache__
+venv
