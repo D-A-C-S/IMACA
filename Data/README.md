@@ -1,1 +1,1 @@
-Si usa la imagen docker las imagenes van en estas carpetas
+Si usa docker las imagenes van en estas carpetas
