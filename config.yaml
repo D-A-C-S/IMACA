@@ -1,8 +1,8 @@
-train_folder : "Data"
-dev_folder : "Data"
+train_folder : "Data/train_data"
+dev_folder : "Data/dev_data"
 
 batch_size : 32
-epochs : 16.0
+epochs : 7
 
 image_size : 256
 crop_size : 240
